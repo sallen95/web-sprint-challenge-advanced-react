@@ -30,13 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+You start with the syntax class <YourComponentName> extends React.Component {}. Inside of these you have a constructor(){} with a super(). You then set up your state by this.state = {}. This is the start to your stateful class component. You have different methods that you can use inside the component as well. 
+
 2. Describe the different phases of the component lifecycle.
+
+There are three different phases of the component lifecycle. First you have the mounting phase where the class component is starting. Then you have the updating phase. This is the bulk and body of the component where it's being up with new props and state. Finally you have the unmounting phase where the component dies.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+The main class component lifecycle methods are the constructor and render methods. Constructor builds the component while render allows your component to render on the page. There are other methods as well like componentDidMount among others that allow you to build things into your component.
+
 4. Define stateful logic.
 
+Stateful logic is logic that deals with the state of something and is built into a component. It can range from a function handling a click event to a function that formats data so that it can be displayed.
+
 5. Describe how to test a React component with React Testing Library.
+
+We use react-testing-library to arrange what we want to test(usually by rendering the component in our test), then we act. Initially we'll want to access specifically what we want to test and then we make changes to it that a user would make (for example we can add text to an input in a form). Finally we want to assert and check that the changes we made are actually occurring as we would expect.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
